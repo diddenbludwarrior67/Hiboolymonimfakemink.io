@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Jordan</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #ffffff; /* White background */
+            color: #000000; /* Black text */
+            font-family: 'Orbitron', sans-serif;
+            overflow-x: hidden;
+        }
+        .page {
+            width: 85%;
+            max-width: 900px;
+            margin: 30px auto;
+            background: rgba(255, 255, 255, 0.6); /* More transparent white */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Black shadow */
+            position: relative;
+            border: 2px solid #000000; /* Black border */
+        }
+        .title-page {
+            text-align: center;
+            padding-top: 100px; /* Increased padding for more prominence */
+            animation: pulse 2s infinite;
+        }
+        .title-page h1 {
+            font-size: 5em; /* Larger font size for About Me heading */
+            margin-bottom: 30px;
+            letter-spacing: 3px; /* Increased spacing for emphasis */
+        }
+        .title-page h2 {
+            font-size: 3em; /* Larger font size for Jordan's name */
+            margin-bottom: 25px;
+        }
+        .title-page p {
+            font-size: 1.5em; /* Larger font size for text */
+            line-height: 2; /* Increased line height for readability */
+            margin: 15px 0;
+        }
+        .career-page {
+            background: rgba(255, 255, 255, 0.6); /* More transparent white */
+            border: 3px dashed #000000; /* Dashed black border */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7); /* Stronger black shadow */
+            padding: 40px; /* Larger padding */
+        }
+        h1, h2, h3 {
+            color: #000000; /* Black text */
+            text-shadow: 0 0 5px #ffffff, 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle white glow + black shadow */
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+        }
+        h2 {
+            font-size: 2.2em;
+            margin-top: 25px;
+        }
+        h3 {
+            font-size: 1.6em;
+            margin-top: 20px;
+        }
+        p, li {
+            line-height: 1.8;
+            font-size: 1.2em;
+            color: #000000; /* Black text */
+            text-shadow: 0 0 5px #ffffff, 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle white glow + black shadow */
+        }
+        ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        ul li:before {
+            content: '★';
+            color: #000000; /* Black star */
+            margin-right: 10px;
+        }
+        .logo {
+            width: 150px; /* Slightly larger logo */
+            height: 150px;
+            margin: 30px auto;
+            background: url('https://i.imgur.com/XX8gN0a.png') center/cover; /* Logo image */
+            box-shadow: 0 0 20px #000000; /* Black shadow */
+            animation: pulse 2s ease-in-out infinite;
+        }
+        canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+        }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <canvas id="catCanvas"></canvas>
+    <!-- Page 1: About Me -->
+    <div class="page title-page">
+        <h1>About Me</h1>
+        <h2>Jordan</h2>
+        <p>Class 9D, Semester 1</p>
+        <p>I'm passionate about psychology and helping others, with a goal to work with veterans at the U.S. Department of Veterans Affairs. Music is a big part of my life—I’m drawn to alternative rock and gothic vibes, with favorite bands like HIM, My Chemical Romance, and Evanescence. Their emotive lyrics and powerful melodies inspire me to explore human emotions, which ties into my interest in mental health. Whether it’s studying or unwinding, you’ll often find me listening to music that resonates with my soul.</p>
+        <div class="logo"></div>
+        <p>Fall 2025</p>
+    </div>
+
+    <!-- Page 2: U.S. Department of Veterans Affairs -->
+    <div class="page career-page">
+        <h2>U.S. Department of Veterans Affairs</h2>
+        <p>The U.S. Department of Veterans Affairs (VA) is a federal agency dedicated to serving veterans, their families, caregivers, and survivors. I’m interested in working with the VA because of its mission to support those who have served our country, especially in roles like psychology that align with my career goals.</p>
+
+        <h3>Mission</h3>
+        <p>The VA’s mission is to fulfill President Lincoln’s promise: “To care for him who shall have borne the battle, and for his widow, and his orphan” by providing comprehensive services to veterans. This mission drives the VA’s work to ensure veterans receive the care, benefits, and respect they deserve.</p>
+
+        <h3>Services Provided</h3>
+        <p>The VA operates through three main administrations, offering a wide range of services:</p>
+        <ul>
+            <li><strong>Veterans Health Administration (VHA)</strong>: Runs the largest integrated healthcare system in the U.S., with 170 medical centers and over 1,000 outpatient clinics, serving 9.1 million veterans annually. Services include primary care, mental health support, and specialized care like PTSD treatment.</li>
+            <li><strong>Veterans Benefits Administration (VBA)</strong>: Manages benefits like disability compensation, home loan guaranties, education (GI Bill), vocational rehabilitation, and life insurance for veterans and their families.</li>
+            <li><strong>National Cemetery Administration (NCA)</strong>: Maintains 155 national cemeteries, providing burial services and memorial benefits for veterans and eligible family members.</li>
+        </ul>
+
+        <h3>Work Settings</h3>
+        <p>The VA offers diverse work environments where employees can make a difference:</p>
+        <ul>
+            <li><strong>Medical Centers and Clinics</strong>: Over 1,380 healthcare facilities, including 170 VA medical centers and 1,193 outpatient sites, where professionals like psychologists provide care.</li>
+            <li><strong>Regional Offices</strong>: 56 regional offices handle benefits processing, such as disability claims and education benefits.</li>
+            <li><strong>National Cemeteries</strong>: 155 cemeteries where staff manage burial services and maintain national shrines.</li>
+            <li><strong>Administrative and IT Roles</strong>: Opportunities in Washington, D.C., and field offices for roles like IT specialists or program managers.</li>
+        </ul>
+
+        <h3>Opportunities at the VA</h3>
+        <p>Working at the VA offers rewarding careers, especially for someone interested in psychology:</p>
+        <ul>
+            <li><strong>Healthcare Roles</strong>: Psychologists, nurses, and doctors provide mental health and medical care, helping veterans with conditions like PTSD or depression.</li>
+            <li><strong>Benefits Administration</strong>: Roles in processing claims for disability, education, or home loans, ensuring veterans receive their benefits.</li>
+            <li><strong>Research and Innovation</strong>: Opportunities to work on projects like PTSD treatment or electronic health records (VistA system).</li>
+            <li><strong>Training and Growth</strong>: The VA offers training programs, like the Acquisition Academy, and hires for roles that don’t always require years of experience.</li>
+        </ul>
+
+        <h3>Qualifications Needed</h3>
+        <p>To work as a psychologist at the VA, specific qualifications are required:</p>
+        <ul>
+            <li><strong>Educational Requirements</strong>: A doctoral degree (Ph.D. or Psy.D.) in clinical or counseling psychology from an accredited program is typically required. The program must be accredited by the American Psychological Association (APA) or another recognized accrediting body.</li>
+            <li><strong>Licensure</strong>: A valid, unrestricted license to practice psychology in a U.S. state, territory, or the District of Columbia is mandatory.</li>
+            <li><strong>Internship</strong>: Completion of an APA-accredited internship or equivalent supervised clinical training is often required.</li>
+            <li><strong>Experience</strong>: For some positions, specialized experience in areas like PTSD or veteran mental health is preferred, though entry-level roles may not require extensive experience.</li>
+            <li><strong>Skills</strong>: Strong communication, problem-solving, and empathy skills are essential for working with veterans and collaborating with healthcare teams.</li>
+        </ul>
+        <p>For those pursuing a degree, top universities offering strong psychology programs include Stanford University, University of California, Los Angeles (UCLA), and University of Michigan, all of which have APA-accredited doctoral programs in clinical psychology. These programs typically take 5-7 years to complete, including coursework, clinical training, and a dissertation.</p>
+        <p>While a degree is required for psychology roles at the VA, some non-clinical roles (e.g., IT or administrative positions) may not require a degree. For these, prerequisites include:</p>
+        <ul>
+            <li><strong>Technical Skills</strong>: Proficiency in relevant tools (e.g., programming for IT roles or data management for administrative roles).</li>
+            <li><strong>Portfolio</strong>: A portfolio showcasing relevant projects or work experience, even if self-taught or gained through bootcamps.</li>
+            <li><strong>Certifications</strong>: Professional certifications, such as CompTIA for IT roles, can enhance qualifications.</li>
+            <li><strong>Soft Skills</strong>: Communication, teamwork, and problem-solving skills, often gained through prior work or volunteer experience.</li>
+        </ul>
+
+        <h3>Average Salary</h3>
+        <p>The average salary for psychologists at the VA varies based on experience, location, and role. According to the U.S. Bureau of Labor Statistics (BLS), clinical psychologists earned a median annual wage of $90,130 in May 2024. At the VA, salaries for psychologists typically range from $80,000 to $120,000 per year, with senior roles or those in high-cost areas like California potentially exceeding $150,000. Non-clinical roles, such as IT specialists or benefits administrators, have a median salary range of $70,000 to $100,000, depending on experience and location.</p>
+        <p>I’m excited about the VA because I could pursue a psychology career, helping veterans with mental health challenges, while working in a supportive environment that values service and innovation.</p>
+    </div>
+
+    <script>
+        // Shooting star animation
+        const canvas = document.getElementById('catCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        // Array of images
+        const images = [
+            new Image()
+        ];
+        images[0].src = 'https://i.imgur.com/XX8gN0a.png'; // Image for falling animation
+
+        const objects = [];
+        const numObjects = 15; // Number of falling objects
+
+        class FallingObject {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = -50;
+                this.size = 60; // Increased size for larger falling images
+                this.speedX = (Math.random() - 0.5) * 4; // Slower horizontal speed
+                this.speedY = Math.random() * 3 + 2; // Slower vertical speed
+                this.angle = Math.atan2(this.speedY, this.speedX) * 180 / Math.PI;
+                this.tailLength = 60;
+                this.opacity = Math.random() * 0.4 + 0.6;
+                // Use the new image
+                this.image = images[0];
+            }
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+                if (this.y > canvas.height + this.size || this.x < -this.size || this.x > canvas.width + this.size) {
+                    this.x = Math.random() * canvas.width;
+                    this.y = -this.size;
+                    this.speedX = (Math.random() - 0.5) * 4;
+                    this.speedY = Math.random() * 3 + 2;
+                    this.angle = Math.atan2(this.speedY, this.speedX) * 180 / Math.PI;
+                    this.image = images[0];
+                }
+            }
+            draw() {
+                ctx.save();
+                // Draw black trail
+                ctx.beginPath();
+                ctx.moveTo(this.x, this.y);
+                ctx.lineTo(this.x - this.speedX * this.tailLength / 10, this.y - this.speedY * this.tailLength / 10);
+                ctx.strokeStyle = `rgba(0, 0, 0, ${this.opacity})`; // Black trail
+                ctx.lineWidth = 4;
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = '#000000'; // Black shadow
+                ctx.stroke();
+                // Draw image or fallback circle
+                ctx.translate(this.x, this.y);
+                ctx.rotate(this.angle * Math.PI / 180);
+                if (this.image.complete && this.image.naturalWidth !== 0) {
+                    ctx.drawImage(this.image, -this.size / 2, -this.size / 2, this.size, this.size);
+                } else {
+                    // Fallback: draw a black circle if image fails
+                    ctx.beginPath();
+                    ctx.arc(0, 0, this.size / 2, 0, Math.PI * 2);
+                    ctx.fillStyle = '#000000';
+                    ctx.fill();
+                }
+                ctx.restore();
+            }
+        }
+
+        // Initialize falling objects
+        for (let i = 0; i < numObjects; i++) {
+            objects.push(new FallingObject());
+        }
+
+        // Start animation after image loads
+        let imagesLoaded = 0;
+        const startAnimation = () => {
+            imagesLoaded++;
+            if (imagesLoaded === images.length) {
+                console.log('All images loaded successfully');
+                animate();
+            }
+        };
+
+        images.forEach((img, index) => {
+            img.onload = startAnimation;
+            img.onerror = () => {
+                console.error(`Failed to load image ${index + 1}, using fallback circles`);
+                startAnimation();
+            };
+        });
+
+        // Animation loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            objects.forEach(obj => {
+                obj.update();
+                obj.draw();
+            });
+            requestAnimationFrame(animate);
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+    </script>
+</body>
+</html>
